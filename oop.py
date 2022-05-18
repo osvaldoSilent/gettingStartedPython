@@ -11,14 +11,24 @@ class user:
         self.resta=n1-n2
         self.division=n1/n2
         self.multiplication=n1*n2
-
+        self.launchMenu=int(input(f"The name of the user is {u.name} and is {u.age} years old \n"
+                                        f"What you wanna do?\n"
+                                        f"1-Sumar\n"
+                                        f"2-Restar\n"
+                                        f"2-dividir\n"
+                                        f"2-multiplicar\n"))
 
 
 u = user()
 u.default()
 u.__int__(10,2)
-print(f"The name of the user is {u.name} and is {u.age} years old");
-print(u.suma)
-print(u.resta)
-print(u.division)
-print(u.multiplication)
+
+option = u.launchMenu
+if(option==1):
+    print(u.suma)
+elif(option==2):
+    print(u.resta)
+elif(option==3):
+    print(u.division)
+elif(option==4):
+    print(u.multiplication)

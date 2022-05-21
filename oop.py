@@ -18,7 +18,8 @@ class user:
                                         f"1-Sumar\n"
                                         f"2-Restar\n"
                                         f"3-dividir\n"
-                                        f"4-multiplicar\n"))
+                                        f"4-multiplicar\n"
+                                        f"5-exit\n"))
     def launchGameMenu(self):
         return int(input(f"Welcome to my APP, what you wanna do? \n"
                          f"What you wanna do?\n"
@@ -36,9 +37,9 @@ while(optionSelected!=3):
 
     if(optionSelected == 1):
         newName = input("insert name for new user: ")
-        newAge = input("insert age for new user: ")
-        newSex = input("insert sex for new user: ")
         setattr(u,'name',newName)
+        newAge = input(f"insert age for {u.name}: ")
+        newSex = input(f"insert sex for {u.name}: ")
         setattr(u,'age',newAge)
         setattr(u,'sex',newSex)
 

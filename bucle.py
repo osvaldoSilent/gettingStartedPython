@@ -4,11 +4,17 @@ while (True):
     if(count==2):
         print("continuing")
         continue
-
-    print("Este mensaje se excluye")
-
-    print(count)
     if(count>5):
+        print("passing")
         pass
+    print(count)
     if(count==10):
         break;
+
+
+for i in "al@go":
+    print(i)
+    if(i == "@"):
+        break;
+else:
+    print("no @")

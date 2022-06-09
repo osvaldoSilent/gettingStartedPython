@@ -1,8 +1,6 @@
-import CalculatorOop
+import calculator.Calculator
 
-
-full = CalculatorOop.Full()
-full.__int__()
-full.suma()
-full.raiz()
-
+calculator = calculator.Calculator.FullCalculator()
+calculator.__int__()
+print(f"Result of suma is {calculator.suma()}")
+print(f"Result of raiz is { calculator.raiz()}")

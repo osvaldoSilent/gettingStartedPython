@@ -1,2 +1,2 @@
 # RedistributableGettingStarted
-This project just can be executed after install redistributable of gettingStartedPython.
+The main.py just can be executed after to install the package redistributable Calculator of this project.

@@ -1,4 +1,4 @@
-from package_to_install.setup_package.BaseCalculator import BaseCalculator
+from package_to_install.setup_calculator.BaseCalculator import BaseCalculator
 
 class BasicOperation(BaseCalculator):
     pass

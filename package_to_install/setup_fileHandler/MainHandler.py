@@ -30,14 +30,13 @@ class MainHandler:
         pass
 
     def write(self,f, encoding, lines):
-
         reader = reader_writter(f)
         reader.write(encoding, lines)
         pass
 
-    def rewrite(self,f):
+    def write_from_zero(self,f, encoding,lines):
         reader = reader_writter(f)
-        reader.write()
+        reader.write(encoding,lines)
         pass
 
     def new(self):

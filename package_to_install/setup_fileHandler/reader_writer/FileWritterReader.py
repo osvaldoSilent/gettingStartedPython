@@ -1,6 +1,6 @@
 
 from io import open
-class reader_writter:
+class Reader_Writter:
     pass
     def __init__(self, fileBase):
         self.fileBase = fileBase

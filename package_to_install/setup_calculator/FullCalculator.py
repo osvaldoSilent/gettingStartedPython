@@ -1,5 +1,5 @@
-from package_to_install.setup_calculator.ComplexOperation import ComplexOperation
-from package_to_install.setup_calculator.BasicOperation import BasicOperation
+from .ComplexOperation import ComplexOperation
+from .BasicOperation import BasicOperation
 
 
 class FullCalculator(ComplexOperation, BasicOperation):

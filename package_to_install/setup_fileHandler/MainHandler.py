@@ -1,5 +1,5 @@
-from package_to_install.setup_fileHandler.base.FileBase import FileBase
-from package_to_install.setup_fileHandler.reader_writer.FileWritterReader import reader_writter
+from .base.FileBase import FileBase
+from .reader_writer.FileWritterReader import Reader_Writter
 
 class MainHandler:
     pass
@@ -25,17 +25,17 @@ class MainHandler:
             pass
 
     def read(self,f, encoding):
-        reader = reader_writter(f)
+        reader = Reader_Writter(f)
         reader.read(self.getFormat(f.extension), encoding)
         pass
 
     def write(self,f, encoding, lines):
-        reader = reader_writter(f)
+        reader = Reader_Writter(f)
         reader.write(encoding, lines)
         pass
 
     def write_from_zero(self,f, encoding,lines):
-        reader = reader_writter(f)
+        reader = Reader_Writter(f)
         reader.write(encoding,lines)
         pass
 

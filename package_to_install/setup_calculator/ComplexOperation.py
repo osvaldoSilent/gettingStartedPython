@@ -1,4 +1,4 @@
-from package_to_install.setup_calculator.BaseCalculator import BaseCalculator
+from .BaseCalculator import BaseCalculator
 import math
 
 class ComplexOperation(BaseCalculator):

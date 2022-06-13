@@ -6,3 +6,31 @@ new lines without separator '/ / line / /'
 Second paragraph
 to show you can add new paragraphs
 using double \ n
+First paragraph of text
+to show that you can add
+new lines without separator '/ / line / /' 
+
+Second paragraph
+to show you can add new paragraphs
+using double \ n
+First paragraph of text
+to show that you can add
+new lines without separator '/ / line / /' 
+
+Second paragraph
+to show you can add new paragraphs
+using double \ n
+First paragraph of text
+to show that you can add
+new lines without separator '/ / line / /' 
+
+Second paragraph
+to show you can add new paragraphs
+using double \ n
+First paragraph of text
+to show that you can add
+new lines without separator '/ / line / /' 
+
+Second paragraph
+to show you can add new paragraphs
+using double \ n

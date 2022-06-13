@@ -1,34 +1,62 @@
 import pickle
-class Example:
+from typing import List, Any
+
+
+class Persona:
     pass
-    def __int__(self):
-        self.name_list=[]
+    def __int__(self,name,age,sex):
+        self.name = name
+        self.age = age
+        self.sex = sex
         pass
-    def createBinary(self, name):
-        f = open(name,"+ab")
+    def __str__(self):
+        return f"{self.name} { self.age} { self.sex}"
+
+class BinaryFile:
+    def __int__(self,fileName):
+        self.fileName = fileName
+        self.list = []
         try:
-            list = pickle.load(f)
-            print(f"Binary file already generated with name {name} and it has {len(list)} lists on it" )
+            f = open(self.fileName,"rb+")
+            self.list=pickle.load(f)
         except:
-            print(f"New Binary file created with name: {name}")
-        f.close()
-        del f;
-    def readBinary(self,name):
-        fichero = open(name,"rb")
+            pass
+    def create(self):
+        f = open(self.fileName,"rb+")
         try:
-            name_list = pickle.load(fichero)
-            list = pickle.load(fichero)
-            print(f"Binary file already generated with name {name} and it has {len(list)} lists on it" )
-            for i in list:
-                print(i)
+            self.list=pickle.load(f)
+            print(f"{self.fileName} already exists and it has {len(self.list)} elements")
         except:
-            print(f"Binary file '{name}' is empty")
-        fichero.close()
-        del fichero
-    def addList(self, name, object):
-        self.name_list.append(object)
-        f = open(name,"+ab")
-        f.seek(0)
-        pickle.dump(self.name_list,f)
+            print(f"{self.fileName} created")
         f.close()
-        del f;
+        del f
+    def read(self):
+        i = None
+        i : Persona=(i)
+        try:
+            f = open(self.fileName,"rb+")
+            try:
+                with open(self.fileName, 'rb') as f:
+                    reader = pickle.load(f)
+                if(reader== None):
+                    print("Empty file")
+                elif(len(reader)==0):
+                    print("Empty file")
+                for i in reader:
+                    print(i.__str__())
+                f.close()
+                del f
+            except:
+                print("Error reading file")
+        except:
+            print(f"{self.fileName} doesnt exist")
+
+    def addList(self, lista):
+        self.list.append(lista)
+    def saveList(self):
+        f = open(self.fileName,"wb+")
+        pickle.dump(self.list, f)
+        f.close()
+        del f
+    def cleanList(self):
+        self.list.clear()

@@ -58,12 +58,26 @@
 #                )
 #runner.operationR("read","D:/IntellijProjects/PythonProjects/primeroPasos/generated/example",".txt","utf8")
 
-from package_to_install.setup_binaryFiles.example import Example
+from package_to_install.setup_binaryFiles.example import Persona
+from package_to_install.setup_binaryFiles.example import BinaryFile
+persona1 = Persona()
+persona1.__int__("Osvaldo","26","H")
+persona2 = Persona()
+persona2.__int__("Isaac","26","H")
+persona3 = Persona()
+persona3.__int__("Silent","26","H")
 
-a = Example()
-a.__int__()
-a.createBinary("HippyHop")
-list = ["novo","fogo","carahio"]
-a.addList("HippyHop",list)
-a.readBinary("HippyHop")
+file = BinaryFile()
+file.__int__("fogo")
+file.create()
+file.addList(persona1)
+file.addList(persona2)
+file.addList(persona3)
+
+file.saveList()
+
+
+file.read()
+
+
 

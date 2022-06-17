@@ -1,22 +1,21 @@
-from .BaseCalculator import BaseCalculator
-
-class BasicOperation(BaseCalculator):
+from .Base import Base
+class BasicCalculator(Base):
     pass
     def __int__(self):
         super().__int__(2)
-    def sumar(self):
+    def sume(self):
         self.setData(2)
         a,b, = self.data
-        return a+b
-    def restar(self):
+        return a + b;
+    def rest(self):
         self.setData(2)
         a,b, = self.data
-        return a-b
-    def multiplicar(self):
+        return a - b;
+    def divition(self):
         self.setData(2)
         a,b, = self.data
-        return a*b
-    def dividir(self):
+        return a / b;
+    def multiplication(self):
         self.setData(2)
         a,b, = self.data
-        return a/b
+        return a * b;

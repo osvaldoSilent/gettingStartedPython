@@ -1,11 +1,11 @@
-from PackageToInstall.Calculator.FullCalculator import FullCalculator
-
-
+#from PackageToInstall.Calculator.FullCalculator import FullCalculator
+from Calculator.FullCalculator import FullCalculator
 c = FullCalculator()
 c.__init__()
 print(f"Result: {c.sume()}")
 print(f"Result: {c.rest()}")
 print(f"Result: {c.cube()}")
+
 
 
 #from PackageToInstall.FileHandler.File.HandlerFile import HandlerFile

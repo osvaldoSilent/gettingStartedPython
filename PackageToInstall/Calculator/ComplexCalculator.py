@@ -1,20 +1,19 @@
-from .BaseCalculator import BaseCalculator
+from .Base import Base
 import math
 
-class ComplexOperation(BaseCalculator):
+class ComplexCalculator(Base):
     pass
     def __int__(self):
         super().__int__(1)
-        pass
     def raiz(self):
         self.setData(1)
-        a,=self.data
+        a, = self.data
         return math.sqrt(a)
-    def cuadrado(self):
+    def square(self):
         self.setData(1)
-        a,=self.data
+        a, = self.data
         return math.pow(a,2)
-    def cubo(self):
+    def cube(self):
         self.setData(1)
-        a,=self.data
+        a, = self.data
         return math.pow(a,3)
